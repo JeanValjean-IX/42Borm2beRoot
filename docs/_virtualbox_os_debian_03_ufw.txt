@@ -1,0 +1,8 @@
+instalamos sudo:
+
+$ apt install ufw
+
+
+
+
+
