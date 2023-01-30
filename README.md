@@ -1,5 +1,9 @@
 # Born2beRoot
 
+Born2beRoot es un projecto que forma parte del Cursus 42.
+
+El objetivo de este repositorio es documentar el proceso que se ha seguido para la realización del proyecto. 
+
 ## Material necesario
 
 - 1x Software de virtualización o hypervisor "Oracle Virtualbox"
