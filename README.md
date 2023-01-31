@@ -25,5 +25,13 @@ El objetivo de este repositorio es documentar el proceso que se ha seguido para 
 ### Imagen ISO para la instalación del Sistema Opertivo Debian
 - Imagen de instalación básica por red: https://www.debian.org/distrib/netinst
 
+## Virtualización del sistema operativo Linux Debian
+
+### Instalación del software para virtualizar Oacle WM VirtualBox
+
+
+
+### Configuración de la máquina virtual.
+
 
 
