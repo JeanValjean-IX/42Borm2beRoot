@@ -42,7 +42,7 @@ Con independencia del sistema operativo donde se instale VirtualBox hay que tene
 - Procesadores: 1 (si pueden ser 2, mejor)
 - Adaptadorde red conectado a: NAT (Configuración avanzada: Reenvio de puertos [puerto anfitrión: 4242, puerto invitado: 4242])
 
-### Instalación de un sistema operativo virtualizado de Linux Debian
+### Instalación del sistema operativo virtualizado: Linux Debian
 
 Para poder virtualizar el sistema operativo Debian, primero creamos una máquina nueva en VirtualBox.
 
