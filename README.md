@@ -46,6 +46,6 @@ Con independencia del sistema operativo donde se instale VirtualBox hay que tene
 
 Para poder virtualizar el sistema operativo Debian, primero creamos máquina nueva en VirtualBox. 
 
-En el proceso de creación tendremos en cuenta las configuraciones indicadas en el apartado anterior, en especial las del "sgoinfre".
+En el proceso de creación de la maquina virtual tendremos en cuenta las configuraciones indicadas en el apartado anterior, en especial las del "sgoinfre".
 
 
