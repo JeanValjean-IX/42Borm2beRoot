@@ -27,11 +27,25 @@ El objetivo de este repositorio es documentar el proceso que se ha seguido para 
 
 ## Virtualización del sistema operativo Linux Debian
 
-### Instalación del software para virtualizar Oacle WM VirtualBox
+### Instalación del software: Oracle WM VirtualBox
 
+Para la instalación de VirtualBox en sistemas operativos de Mac y Windows descargaremos el paquete de instalación y ejecutaremos el instalador. Sin embargo para sistemas Linux lo más sencillo es seguir las indicaciones que aparecen en el apartado de descargas.
 
+Con independencia del sistema operativo donde se instale VirtualBox hay que tener en cuenta que el usuario que se utilice ha de tener permisos de administración.
 
-### Configuración de la máquina virtual.
+### Configuraciónes significativas de la máquina virtual
 
+- Ubicación de máquina virtual: (ver indicaciones "sgoinfre" de la intra)   
+- Sistema operativo: Linux # Debian (64-bit)
+- Memoria base: 4 GB (4096 MB)
+- Almacenamiento: Disco 32 GB (almacenamiento dinámico)
+- Procesadores: 1 (si pueden ser 2, mejor)
+- Adaptadorde red conectado a: NAT (Configuración avanzada: Reenvio de puertos [puerto anfitrión: 4242, puerto invitado: 4242])
+
+### Instalación de un sistema operativo virtualizado de Linux Debian
+
+Para poder virtualizar el sistema operativo Debian, primero creamos máquina nueva en VirtualBox. 
+
+En el proceso de creación tendremos en cuenta las configuraciones indicadas en el apartado anterior, en especial las del "sgoinfre".
 
 
