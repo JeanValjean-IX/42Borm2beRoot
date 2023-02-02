@@ -35,12 +35,15 @@ Con independencia del sistema operativo donde se instale VirtualBox hay que tene
 
 ### Configuraciónes significativas de la máquina virtual
 
-- Ubicación de máquina virtual: (ver indicaciones "sgoinfre" de la intra)   
-- Sistema operativo: Linux # Debian (64-bit)
-- Memoria base: 4 GB (4096 MB)
-- Almacenamiento: Disco 32 GB (almacenamiento dinámico)
-- Procesadores: 1 (si pueden ser 2, mejor)
-- Adaptadorde red conectado a: NAT (Configuración avanzada: Reenvio de puertos [puerto anfitrión: 4242, puerto invitado: 4242])
+| Característica | Valor |
+| --- | --- |
+| Ubicación de máquina virtual | (ver indicaciones "sgoinfre" de la intra) |   
+| Sistema operativo | Linux # Debian (64-bit) |
+| Memoria base | 4 GB (4096 MB) |
+| Almacenamiento | Disco 32 GB (almacenamiento dinámico) |
+| Procesadores | 1 (si pueden ser 2, mejor) |
+| Adaptadorde red conectado a | NAT (Configuración avanzada: Reenvio de puertos [puerto anfitrión: 4242, puerto invitado: 4242]) |
+
 
 ### Instalación del sistema operativo virtualizado: Linux Debian
 
