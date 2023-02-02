@@ -48,4 +48,7 @@ Para poder virtualizar el sistema operativo Debian, primero creamos una máquina
 
 En el proceso de creación de la maquina virtual tendremos en cuenta las configuraciones indicadas en el apartado anterior, en especial las del "sgoinfre".
 
+Una vez creada la máquina, se indica a la unidad de CDROM que cargue la imagen ISO de la instalación de Debian que hemos descargado.
+
+
 
