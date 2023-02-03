@@ -77,10 +77,23 @@ A contintinuación se detallan las acciones a realizar:
 - Una vez creada la máquina virtual, hacemos clic en el botón con la etiqueta de "Iniciar" para arrancar el proceso de instalación del sistema operativo Debian.
 
 ![This is an image](/docs/images/007_setup_debian.png)
-- Seleccionamos la opción de "Install".
+- Seleccionamos la opción de "Install" y continuamos
 
 ![This is an image](/docs/images/008_setup_debian.png)
-- Seleccionamos la opción de "Install".
+- Seleccionamos el idioma "English" (podría ser uno diferente) y continuamos
+
+![This is an image](/docs/images/009_setup_debian.png)
+- Seleccionamos el pais "United Kingdon" (podría ser uno diferente) y continuamos
+
+![This is an image](/docs/images/010_setup_debian.png)
+- Seleccionamos la configuración del teclado "British English" (podría ser uno diferente) y continuamos
+
+![This is an image](/docs/images/012_setup_debian.png)
+- Introducimos el "Hostname" de red de la máquina virtual.  
+
+
+
+
 
 
 
