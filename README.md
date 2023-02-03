@@ -76,6 +76,11 @@ A contintinuación se detallan las acciones a realizar:
 ![This is an image](/docs/images/006_new_virtual_machine.png)
 - Una vez creada la máquina virtual, hacemos clic en el botón con la etiqueta de "Iniciar" para arrancar el proceso de instalación del sistema operativo Debian.
 
+![This is an image](/docs/images/007_setup_debian.png)
+- Seleccionamos la opción de "Install".
+
+![This is an image](/docs/images/008_setup_debian.png)
+- Seleccionamos la opción de "Install".
 
 
 
