@@ -78,6 +78,7 @@ A contintinuación se detallan las acciones a realizar:
 
 ![This is an image](/docs/images/007_setup_debian.png)
 - Seleccionamos la opción de "Install" y continuamos
+- Para este proyecto se ha elegido como idioma el inglés (aunque podría ser otro)
 
 ![This is an image](/docs/images/008_setup_debian.png)
 - Seleccionamos el idioma "English" (podría ser uno diferente) y continuamos
@@ -89,8 +90,46 @@ A contintinuación se detallan las acciones a realizar:
 - Seleccionamos la configuración del teclado "British English" (podría ser uno diferente) y continuamos
 
 ![This is an image](/docs/images/012_setup_debian.png)
-- Introducimos el "Hostname" de red de la máquina virtual.  
+- Introducimos el "Hostname" de red de la máquina virtual.
 
+![This is an image](/docs/images/013_setup_debian.png)
+- En "Domain name" tendríamos que introducir el nombre de dominio de nuestra red (pero para este proyecto lo dejaremos en blanco)
+- Continuamos
+
+![This is an image](/docs/images/014_setup_debian.png)
+- En "Root password" inroducimos la contraseña del usuario "root"
+- Continuamos
+
+![This is an image](/docs/images/015_setup_debian.png)
+- Volvemos a introducir la contraseña del usuario "root" (de esta forma verificamos que la contraseña está bien introducida, en caso contrarío, el instalador nos avisaría del problema y volvería a solicitar y verificar la contraseña una vez más)
+- Continuamos
+
+![This is an image](/docs/images/016_setup_debian.png)
+- En "Full name for new user" introduciomos el nombre para un nuevo usuario.  
+- Continuamos
+
+![This is an image](/docs/images/018_setup_debian.png)
+- En "Username for your acouunt" introduciomos el username que utilizará el nuevo usuario.  
+- Continuamos
+
+![This is an image](/docs/images/020_setup_debian.png)
+- Introducimos la contraseña para el nuevo usuario.  
+- Continuamos
+
+![This is an image](/docs/images/022_setup_debian.png)
+- Volvemos a introducir la contraseña del nuevo usuario.  
+- Continuamos
+
+![This is an image](/docs/images/025_setup_debian.png)
+- Seleccionamos la opción "Guided - use entire disk and set up encrypted LVM".  
+- Continuamos
+
+![This is an image](/docs/images/026_setup_debian.png)
+- Continuamos
+
+![This is an image](/docs/images/027_setup_debian.png)
+- Seleccionamos la opción "Separate /home partition"
+- Continuamos
 
 
 
