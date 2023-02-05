@@ -64,7 +64,7 @@ Antes de continuar, hemos de tener en cuenta que todo proceso de instalación y 
 
 ### Hoja de ruta o plan de trabajo: 
 
-- Instalación de la utilidad "super user do" (utilidad: sudo)
+- [Instalación de la utilidad "super user do" (utilidad: sudo)](/docs/sudo_setup.md)
 - Instalación de un servicio de acceso remoto por SSH (Servidor de openSSH)
 - Instalación de la utilidad "Uncomplicated Firewall" (utilidad: ufw)
 - Implementación de una política estricta de passwords (módulos: libpam-pwquality / libpam-cracklib)
