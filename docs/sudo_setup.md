@@ -10,7 +10,7 @@ Antes de continuar, hemos de tener en cuenta que todo proceso de instalación y 
 
 ### Instalación de la utilidad "super user do" (utilidad: sudo)
 
-Antes de empezar con la instalación, utilizaremos la utilidad de "Snapshot" (de VirtualBox) para obtener una fotografia del sistema. De esta forma, en el caso que el resultados obtenidos no sean los deseados, podríamos deshacer los cambios realizados, dejando la máquina en el mismo punto que se encontraba antes de realizar la "Snapshot".
+Antes de empezar con la instalación, utilizaremos la utilidad de "Snapshot" (de VirtualBox) para obtener una fotografia del sistema. De esta forma, en el caso que el resultados obtenidos no sean los deseados, podríamos retornar la máquina virtual al mismo punto que se encontraba antes de realizar la "Snapshot".
 
 Al ser el primer paso de configuración del servidor, utilizaremos usuario "root" desde la consola local.
 
