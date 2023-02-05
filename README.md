@@ -46,35 +46,15 @@ Con independencia del sistema operativo donde se instale VirtualBox hay que tene
 
 ### Instalación del sistema operativo virtualizado: Linux Debian
 
-Para poder virtualizar el sistema operativo Debian, primero creamos una máquina nueva en VirtualBox.
+Para poder virtualizar el sistema operativo Debian, primero creamos una máquina nueva en VirtualBox. En el proceso de creación de la maquina virtual tendremos en cuenta las configuraciones indicadas en el apartado anterior.
 
-En el proceso de creación de la maquina virtual tendremos en cuenta las configuraciones indicadas en el apartado anterior, en especial las del "sgoinfre"
+Para poder ver el proceso de creación
 
-A contintinuación se detallan las acciones a realizar: 
-
-![This is an image](/docs/images/001_new_virtual_machine.png)
-- Hacemos un clic en el botón con la etiqueta de "Nueva"
-
-![This is an image](/docs/images/002_new_virtual_machine.png)
-- En "Nombre" introducimos "Born2beRoot" 
-- En "Folder" introduciremos la ruta donde se guardará nuestra máquina virtual (referencia: "sgoinfre")
-- En "ISO image" introducimos la ruta donde se encuentra la imagen ISO del instalador de Debian
-- Hacemos un clic en el botón con la etiqueta de "Next"
-
-![This is an image](/docs/images/003_new_virtual_machine.png)
-- En "Memoria base" introducimos el valor 4096
-- En "Processors" introducimos el valor 1 (para este proyecto, en vez de utilizar 1 se han utilizado 2)
-- Hacemos un clic en el botón con la etiqueta de "Next"
-
-![This is an image](/docs/images/004_new_virtual_machine.png)
-- Seleccionamos la opcion "Create a Virtual Hard Disk Now" e intruducimos el valor 32
-- Hacemos un clic en el botón con la etiqueta de "Next"
-
-![This is an image](/docs/images/005_new_virtual_machine.png)
-- Hacemos un clic en el botón con la etiqueta de "Terminar"
+[Proceso de creación de una máquina virtual donde instalar el sistema operativo Debian](/docs/make_a_virtual_machine.md)
 
 ![This is an image](/docs/images/006_new_virtual_machine.png)
-- Una vez creada la máquina virtual, hacemos clic en el botón con la etiqueta de "Iniciar" para arrancar el proceso de instalación del sistema operativo Debian.
+
+Una vez creada la máquina virtual, hacemos clic en el botón con la etiqueta de "Iniciar" para arrancar el proceso de instalación del sistema operativo Debian.
 
 ![This is an image](/docs/images/007_setup_debian.png)
 - Seleccionamos la opción de "Install" y continuamos
