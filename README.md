@@ -131,7 +131,70 @@ A contintinuación se detallan las acciones a realizar:
 - Seleccionamos la opción "Separate /home partition"
 - Continuamos
 
+![This is an image](/docs/images/028_setup_debian.png)
+- Seleccionamos "Yes"
+- Continuamos
 
+![This is an image](/docs/images/031_setup_debian.png)
+- Introduciomos la frase de encriptacion para el disco 
+- Continuamos
+
+![This is an image](/docs/images/032_setup_debian.png)
+- Volvemos a introducir la frase de encriptacion para el disco
+- Si las dos frases introducidas no coinciden tendremos que repetir el proceso.
+- Si la frase introducida no cumple unos mínimos requisitos de seguridad, aparecerá una pantalla donde nos informará del problema y nos preguntará si deseamos continuar o no (en el caso que no deseemos continuar se repetirá el proceso) 
+- Continuamos
+
+![This is an image](/docs/images/035_setup_debian.png)
+- Continuamos
+
+![This is an image](/docs/images/036_setup_debian.png)
+- Selecionamos "Finish partitioning and write changes"
+- Continuamos
+
+![This is an image](/docs/images/037_setup_debian.png)
+- A la pregunta "Write the changes to disk?" selecionamos "Yes"
+- Continuamos
+
+![This is an image](/docs/images/040_setup_debian.png)
+- A la pregunta "Scan extra installation media?" selecionamos "No"
+- Continuamos
+
+![This is an image](/docs/images/041_setup_debian.png)
+- Selecionamos el pais del repositorio de Debian (se recomienda el más cercano).
+- Continuamos.
+
+![This is an image](/docs/images/042_setup_debian.png)
+- Selecionamos la dirección del repositorio de Debian ("deb.debian.org").
+- Continuamos.
+
+![This is an image](/docs/images/043_setup_debian.png)
+- Si la red local, desde donde estamos realizando la instalación, dispone un servidor proxy, introduciremos su dirección y continuaremos
+- Sin embargo, si la red local no dispone de un servidor proxy continuaremos sin introducir nada
+
+![This is an image](/docs/images/046_setup_debian.png)
+- A la pregunta "Participate in the package usage?" seleccionamos "No"
+- Continuamos
+
+![This is an image](/docs/images/048_setup_debian.png)
+- En la pantalla "Software selecion" sólo dejaremos seleccionada las opción "standard system utilities"
+- Continuamos
+
+![This is an image](/docs/images/050_setup_debian.png)
+- A la pregunta "Install the GRUB boot loader to your primary drive?" seleccionaremos la opción "Yes"
+- Continuamos
+
+![This is an image](/docs/images/051_setup_debian.png)
+- Seleccionamos la opción "/dev/sda (....."
+- Continuamos
+
+![This is an image](/docs/images/054_setup_debian.png)
+- Continuamos
+
+![This is an image](/docs/images/055_setup_debian.png)
+- En este punto se reiniciará la máquina virtual
+- Introduciremos la frase de encriptacion del disco
+- Una vez el sistema ya este iniciado, aparecerá la consola local del servidor, donde tendremos que introducir un username y una contraseña para iniciar la sesion que permita interactuar con el sel servidor.
 
 
 
