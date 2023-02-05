@@ -1,3 +1,15 @@
+# Born2beRoot
+
+## Virtualización del sistema operativo Linux Debian
+
+Para poder virtualizar el sistema operativo Debian, primero creamos una máquina nueva en VirtualBox. En el proceso de creación de la maquina virtual tendremos en cuenta las configuraciones indicadas.
+
+Una vez creada la máquina virtual, ya podremos instalar el sistema operativo. En el siguiente apartado se detallan las acciones a realizar. 
+
+### Proceso de instalación del sistema operativo Linux Debian el sistema operativo Debian
+
+En este apartado se indican las acciones necesarias para instalar el sistema operativo Debian dentro de la máquina virtual que hemos creado.
+
 ![This is an image](/docs/images/006_new_virtual_machine.png)
 
 Una vez creada la máquina virtual, hacemos clic en el botón con la etiqueta de "Iniciar" para arrancar el proceso de instalación del sistema operativo Debian.
