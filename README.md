@@ -48,9 +48,11 @@ Con independencia del sistema operativo donde se instale VirtualBox hay que tene
 
 Para poder virtualizar el sistema operativo Debian, primero creamos una máquina nueva en VirtualBox. En el proceso de creación de la maquina virtual tendremos en cuenta las configuraciones indicadas en el apartado anterior.
 
-Para poder ver el proceso de creación
+Una vez tengamos definida y creada nuestra máquina virtual,la arrancaremos e instalaremos el sistema operativo que hemos elegido (en nuestro caso setrataria de Devian).
 
-[Proceso de creación de una máquina virtual donde instalar el sistema operativo Debian](/docs/make_a_virtual_machine.md)
+A continualción se facilitan 2 enlaces que para seguir tanto el proceso de creación de la máquina virtual como el proceso de instalación del servidor Debian:
+
+- [Proceso de creación de una máquina virtual donde instalar el sistema operativo Debian](/docs/make_a_virtual_machine.md)
 
 ![This is an image](/docs/images/006_new_virtual_machine.png)
 
