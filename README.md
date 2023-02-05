@@ -56,12 +56,10 @@ Para más detalle hacer clic en los siguientes enlaces:
 
 ## Configuración del servidor.
 
-Una vez instalado el servidor, iniciaremos las tareas para la implementación de los diferentes requisitos establecidos para este proyecto.
+Antes de continuar, hemos de tener en cuenta que todo proceso de instalación y configuración puede generar un impacto importante en el funcionamiento del servidor. Por esta razón es recomendable:
 
-Antes de comenzar, hemos de tener en cuenta que todo proceso de instalación y configuración pude generar un impacto importante en el funcionamiento del servidor. Por esta razón es recomendable:
-
-- Realizar "Snapshots" de la máquina virtual antes de iniciar una instalación o configuración. (Una vez que el resultado del proceso sea el deseado, se la "Snapshot" tendrá que ser eleiminada)
-- Antes de instalar una utilidad o libreria o servicio, deberíamos actualizar tanto los repositorios de software como el sistema operativo.
+- Utilizar "Snapshots" de la máquina virtual, para los diferentes procesos de instalación o configuración.
+- Antes de instalar una utilidad o libreria o servicio, deberíamos actualizar tanto los repositorios como el software del sistema operativo.
 - Antes de manipular o alterar un fichero de configuración, deberíamos hacer una copia.
 
 ### Hoja de ruta o plan de trabajo: 
@@ -70,6 +68,8 @@ Antes de comenzar, hemos de tener en cuenta que todo proceso de instalación y c
 - Instalación de un servicio de acceso remoto por SSH (Servidor de openSSH)
 - Instalación de la utilidad "Uncomplicated Firewall" (utilidad: ufw)
 - Implementación de una política estricta de passwords (módulos: libpam-pwquality / libpam-cracklib)
-- Desarrollo e implementación de un "script" de monitorización del servidor
+- Desarrollo e implementación de un "script" de monitorización del servidor.
+
+
 
 
