@@ -128,11 +128,11 @@ A contintinuación se detallan las acciones a realizar:
 - Continuamos
 
 ![This is an image](/docs/images/027_setup_debian.png)
-- Seleccionamos la opción "Separate /home partition"
+- En la seleccion de "Partitioning scheme:" seleccionamos la opción "Separate /home partition"
 - Continuamos
 
 ![This is an image](/docs/images/028_setup_debian.png)
-- Seleccionamos "Yes"
+- A la pregunta "Write changes to disks and configure LVM?" seleccionamos "Yes"
 - Continuamos
 
 ![This is an image](/docs/images/031_setup_debian.png)
