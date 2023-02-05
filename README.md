@@ -53,8 +53,8 @@ Una vez tengamos definida y creada nuestra máquina virtual,la arrancaremos e in
 A continualción se facilitan 2 enlaces que para seguir tanto el proceso de creación de la máquina virtual como el proceso de instalación del servidor Debian:
 
 - [Proceso de creación de una máquina virtual donde instalar el sistema operativo Debian](/docs/make_a_virtual_machine.md)
+- Proceso de instalación del sistema operativo Linux Debian
 
-- Proceso de isntalaci
 
 ![This is an image](/docs/images/006_new_virtual_machine.png)
 
