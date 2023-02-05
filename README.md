@@ -60,11 +60,11 @@ Una vez instalado el servidor, iniciaremos las tareas para la implementación de
 
 Antes de comenzar, hemos de tener en cuenta que todo proceso de instalación y configuración pude generar un impacto importante en el funcionamiento del servidor. Por esta razón es recomendable:
 
-- Realizar "Snapshots" de la máquina virtual antes de iniciar una instalación o configuración. (Una vez que el resultado sea el deseado se tendrá que eliminar la "Snapshot")
-- Antes de instalar, deberíamos actualizar tanto los repositorios de software como el sistema operativo.
-- Antes de manipular o alterar un fichero de configuración deberíamos hacer una copia.
+- Realizar "Snapshots" de la máquina virtual antes de iniciar una instalación o configuración. (Una vez que el resultado del proceso sea el deseado, se la "Snapshot" tendrá que ser eleiminada)
+- Antes de instalar una utilidad o libreria o servicio, deberíamos actualizar tanto los repositorios de software como el sistema operativo.
+- Antes de manipular o alterar un fichero de configuración, deberíamos hacer una copia.
 
-### Hoja de ruta: 
+### Hoja de ruta o plan de trabajo: 
 
 - Instalación de la utilidad "super user do" (utilidad: sudo)
 - Instalación de un servicio de acceso remoto por SSH (Servidor de openSSH)
