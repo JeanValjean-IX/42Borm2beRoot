@@ -56,7 +56,7 @@ Para más detalle hacer clic en los siguientes enlaces:
 
 ## Configuración del servidor.
 
-Una vez instalado el servidor, iniciaremos las tareas para la implementación de los requisitos establecidos para este proyecto.
+Una vez instalado el servidor, iniciaremos las tareas para la implementación de los diferentes requisitos establecidos para este proyecto.
 
 Antes de comenzar, hemos de tener en cuenta que todo proceso de instalación y configuración pude generar un impacto importante en el funcionamiento del servidor. Por esta razón es recomendable:
 
