@@ -50,5 +50,6 @@ Para poder virtualizar el sistema operativo Debian, primero creamos una máquina
 
 Una vez tengamos definida y creada nuestra máquina virtual,la arrancaremos e instalaremos el sistema operativo que hemos elegido (en nuestro caso setrataria de Debian).
 
+Para más detalle hacer clic en los siguientes enlaces:
 - [Proceso de creación de una máquina virtual donde instalar el sistema operativo Debian](/docs/make_a_virtual_machine.md)
 - [Proceso de instalación del sistema operativo Linux Debian](/docs/debian_os_setup.md)
