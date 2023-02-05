@@ -53,3 +53,23 @@ Una vez tengamos definida y creada nuestra máquina virtual,la arrancaremos e in
 Para más detalle hacer clic en los siguientes enlaces:
 - [Proceso de creación de una máquina virtual donde instalar el sistema operativo Debian](/docs/make_a_virtual_machine.md)
 - [Proceso de instalación del sistema operativo Linux Debian](/docs/debian_os_setup.md)
+
+## Configuración del servidor.
+
+Una vez instalado el servidor, iniciaremos las tareas para la implementación de los requisitos establecidos para este proyecto.
+
+Antes de comenzar, hemos de tener en cuenta que todo proceso de instalación y configuración pude generar un impacto importante en el funcionamiento del servidor. Por esta razón es recomendable:
+
+- Realizar "Snapshots" de la máquina virtual antes de iniciar una instalación o configuración. (Una vez que el resultado sea el deseado se tendrá que eliminar la "Snapshot")
+- Antes de instalar, deberíamos actualizar tanto los repositorios de software como el sistema operativo.
+- Antes de manipular o alterar un fichero de configuración deberíamos hacer una copia.
+
+### Hoja de ruta: 
+
+- Instalación de la utilidad "super user do" (utilidad: sudo)
+- Instalación de un servicio de acceso remoto por SSH (Servidor de openSSH)
+- Instalación de la utilidad "Uncomplicated Firewall" (utilidad: ufw)
+- Implementación de una política estricta de passwords (módulos: libpam-pwquality / libpam-cracklib)
+- Desarrollo e implementación de un "script" de monitorización del servidor
+
+
