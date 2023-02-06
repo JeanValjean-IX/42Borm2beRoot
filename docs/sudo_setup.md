@@ -35,5 +35,12 @@ $ cp /etc/sudoers /etc/sudoers.backup
 ```
 $ nano /etc/sudoers
 ```
-
-
+- Buscamos las lineas:
+```
+#User privilege specification
+root ALL=(ALL) ALL
+```
+- Debajo de la línea del usuario"root" añadimos la siguiente línea (las "xxxxx" se ha de substituir por el username que creamos en la instalación del sistema operativo Debian):
+```
+xxxxx ALL=(ALL) ALL
+```
