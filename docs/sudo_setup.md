@@ -40,6 +40,7 @@ $ nano /etc/sudoers
 Defaults        passwd_tries=3
 Defaults        requiretty
 Defaults        logfile="/var/log/sudo.log"
+Defaults        badpass_message="......"
 ```
 - Buscamos las lineas:
 ```
@@ -55,4 +56,18 @@ xxxxx ALL=(ALL) ALL
 ```
 $ usermod -aG sudo xxxxx
 ```
+### Verificaciones
+
+1. Cerramos la sesión del usuario "root"
+2. Volvemos a entrar pero esta vez con el usuario que se creó en el proceso de intalación.
+3. Ejecutamos el comando:
+```
+$ sudo apt update
+```
+4. Verificamos que no aparece un error de permisos.
+5. Introducimos mal el password. Verificamos que nos aparece el mensaje que configuramos.
+6. Volvemos a introducir 2 veces más el password mal y verificamos que, a aparte que nos aparece el mensaje de error, la utilidad deja de ejecutarse.
+7. Ejecutamos el comando otra vez e introducimos el password bien. Verificamos que los repositorios se actualizan correctamente.
+
+Si todas las verificaciones que hemos realizado hemos obtenido un resultado correcto, entonces procederemos a eliminar el "snapshot" que hemos realizado al inicio de la instalación de la utilidad "sudo"
 
