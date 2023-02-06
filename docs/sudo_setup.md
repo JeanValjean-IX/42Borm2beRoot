@@ -35,6 +35,12 @@ $ cp /etc/sudoers /etc/sudoers.backup
 ```
 $ nano /etc/sudoers
 ```
+- Al principio del fichero, encontramos varias líneas que empiezan por "Default". A continuación de estas lineas añadimos:
+```
+Defaults        passwd_tries=3
+Defaults        requiretty
+Defaults        logfile="/var/log/sudo.log"
+```
 - Buscamos las lineas:
 ```
 #User privilege specification
