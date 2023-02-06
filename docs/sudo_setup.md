@@ -64,7 +64,7 @@ $ usermod -aG sudo xxxxx
 ```
 $ sudo apt update
 ```
-  - Verificamos que no aparece un error que haga referencia permisos de usuario.
+  - Verificamos que no aparece un error que haga referencia a permisos de usuario.
   - Introducimos mal el password. 
   - Verificamos que nos aparece el mensaje de error que configuramos.
   - Volvemos a introducir 2 veces más el password mal. 
