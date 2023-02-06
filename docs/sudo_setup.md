@@ -17,18 +17,22 @@ Antes de empezar con la instalación, utilizaremos la utilidad de "Snapshot" (de
 Para poder instalar la utilidad "sudo", utilizaremos la consola local y el usuario "root". 
 
 Una vez dentro de una sesión ejecutaremos las siguientes acciones: 
-```
+
 - Actualizamos los repositorios y el software:
+```
 $ apt update
 $ apt upgrade
-
+```
 - Instalamos la utilidad "sudo":
+```
 $ apt install sudo
-
+```
 - Hacemos una copia de seguridad del fichero de configuración:
+```
 $ cp /etc/sudoers /etc/sudoers.backup
-
+```
 - Editamos el fichero de configuración:
+```
 $ nano /etc/sudoers
 ```
 
