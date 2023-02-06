@@ -10,7 +10,7 @@ Antes de continuar, hemos de tener en cuenta que todo proceso de instalación y 
 
 ### Instalación de la utilidad "super user do" (utilidad: sudo)
 
-La utilidad "sudo" o "super user do" es una herramienta diseñanda para facilitar a los administradores de sistemas la ejecución de comandos con privilegios de superusuario (es decir, como un usuario "root").
+La utilidad "sudo" o "super user do" es una herramienta diseñanda para facilitar, a los administradores de sistemas, la ejecución de comandos con privilegios de superusuario (es decir, como un usuario "root").
 
 Antes de empezar con la instalación, utilizaremos la utilidad de "Snapshot" (de VirtualBox) para obtener una fotografia del sistema. De esta forma, en el caso que el resultados obtenidos no sean los deseados, podríamos retornar la máquina virtual al mismo punto que se encontraba antes de realizar la "Snapshot".
 
@@ -46,3 +46,7 @@ xxxxx ALL=(ALL) ALL
 ```
 - Guardamos y salimos (ctrl+x)
 - Añadimos el usuario al grupo "sudo": (las "xxxxx" se han de substituir por el username del usuario que creamos en la instalación del sistema operativo Debian)
+```
+$ usermod -aG sudo xxxxx
+```
+
