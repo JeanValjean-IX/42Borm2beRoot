@@ -64,17 +64,17 @@ $ usermod -aG sudo xxxxx
 ```
 $ sudo apt update
 ```
-   - Verificamos que no aparece un error de permisos.
-   - Introducimos mal el password. 
-   - Verificamos que nos aparece el mensaje de error que configuramos.
-   - Volvemos a introducir 2 veces más el password mal. 
-   - Verificamos que, a aparte que nos aparece el mensaje de error, la utilidad deja de ejecutarse.
+  - Verificamos que no aparece un error de permisos.
+  - Introducimos mal el password. 
+  - Verificamos que nos aparece el mensaje de error que configuramos.
+  - Volvemos a introducir 2 veces más el password mal. 
+  - Verificamos que, a aparte que nos aparece el mensaje de error, la utilidad deja de ejecutarse.
 4. Volvemos a ejecutar el comando otra vez:
 ```
 $ sudo apt update
 ``` 
-   - Introducimos el password bien.
-   - Verificamos que los repositorios se actualizan correctamente.
+  - Introducimos el password bien.
+  - Verificamos que los repositorios se actualizan correctamente.
 
 Si el resultado de las verificaciones es el esperado, entonces eliminaremos el "Snapshot", en caso contrario, restauraremos el "Snapshot". 
 
