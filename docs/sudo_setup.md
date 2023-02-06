@@ -10,15 +10,25 @@ Antes de continuar, hemos de tener en cuenta que todo proceso de instalación y 
 
 ### Instalación de la utilidad "super user do" (utilidad: sudo)
 
-La utilidad "sudo" o super "user do" es una herramienta diseñanda para facilitar a los administradores del sistema la ejecución de comandos con privilegios de superusuario (es decir, como un usuario "root"). 
+La utilidad "sudo" o "super user do" es una herramienta diseñanda para facilitar a los administradores de sistemas la ejecución de comandos con privilegios de superusuario (es decir, como un usuario "root").
 
 Antes de empezar con la instalación, utilizaremos la utilidad de "Snapshot" (de VirtualBox) para obtener una fotografia del sistema. De esta forma, en el caso que el resultados obtenidos no sean los deseados, podríamos retornar la máquina virtual al mismo punto que se encontraba antes de realizar la "Snapshot".
 
-Para poder instalar la utilidad "sudo", utilizaremos la consola local y el usuario "root". Una vez dentro de una sesión, ejecutaremos los siguientes comandos: 
+Para poder instalar la utilidad "sudo", utilizaremos la consola local y el usuario "root". 
+
+Una vez dentro de una sesión, ejecutaremos los siguientes comandos: 
 ```
 $ apt update
 $ apt upgrade
 $ apt install sudo
+$ cp /etc/sudoers /etc/sudoers.backup
+$ nano /etc/sudoers
 ```
+
+Finalizada la instalación, primiero haremos una copia de seguridad del fichero de configuración "/etc/sudores", después abriremos el fichero con el editor "nano" y realizaremos las siguientes modedificaciones:
+```
+- Buscamos 
+```
+
 
 
