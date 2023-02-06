@@ -18,17 +18,17 @@ Para poder instalar la utilidad "sudo", utilizaremos la consola local y el usuar
 
 Una vez dentro de una sesión, ejecutaremos los siguientes comandos: 
 ```
-- Actualizamos los repositorios y el software
+- Actualizamos los repositorios y el software:
 $ apt update
 $ apt upgrade
 
-- Instalamos la utilidad "sudo"
+- Instalamos la utilidad "sudo":
 $ apt install sudo
 
-- Hacemos una copia de seguridad del fichero de configuración
+- Hacemos una copia de seguridad del fichero de configuración:
 $ cp /etc/sudoers /etc/sudoers.backup
 
-- Editamos el fichero de configuración
+- Editamos el fichero de configuración:
 $ nano /etc/sudoers
 ```
 
