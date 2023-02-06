@@ -40,7 +40,8 @@ $ nano /etc/sudoers
 #User privilege specification
 root ALL=(ALL) ALL
 ```
-- Debajo de la línea del usuario"root" añadimos la siguiente línea (las "xxxxx" se ha de substituir por el username que creamos en la instalación del sistema operativo Debian):
+- Debajo de la línea del usuario "root" añadimos la siguiente línea: (las "xxxxx" se han de substituir por el username que creamos en la instalación del sistema operativo Debian):
 ```
 xxxxx ALL=(ALL) ALL
 ```
+- Guardamos y salimos (ctrl+x)
