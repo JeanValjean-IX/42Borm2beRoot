@@ -16,7 +16,7 @@ Antes de empezar con la instalación, utilizaremos la utilidad de "Snapshot" (de
 
 Para poder instalar la utilidad "sudo", utilizaremos la consola local y el usuario "root". 
 
-Una vez dentro de una sesión, ejecutaremos los siguientes comandos: 
+Una vez dentro de una sesión, ejecutaremos las siguientes acciones: 
 ```
 - Actualizamos los repositorios y el software:
 $ apt update
