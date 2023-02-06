@@ -59,12 +59,12 @@ $ usermod -aG sudo xxxxx
 ### Verificaciones
 
 1. Cerramos la sesión del usuario "root"
-2. Volvemos a entrar pero esta vez con el usuario que se creó en el proceso de intalación.
+2. Volvemos a entrar, pero esta vez con el usuario que se creó en el proceso de intalación.
 3. Ejecutamos el comando:
 ```
 $ sudo apt update
 ```
-  - Verificamos que no aparece un error de permisos.
+  - Verificamos que no aparece un error que haga referencia permisos de usuario.
   - Introducimos mal el password. 
   - Verificamos que nos aparece el mensaje de error que configuramos.
   - Volvemos a introducir 2 veces más el password mal. 
