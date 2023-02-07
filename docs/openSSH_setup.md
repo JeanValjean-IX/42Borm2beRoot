@@ -8,4 +8,4 @@ Antes de continuar, hemos de tener en cuenta que todo proceso de instalación y 
 - Antes de instalar una utilidad o libreria o servicio, deberíamos actualizar tanto los repositorios como el software del sistema operativo.
 - Antes de manipular o alterar un fichero de configuración, deberíamos hacer una copia.
 
-
+### Instalación de un servicio de acceso remoto por SSH (Servidor de openSSH)
