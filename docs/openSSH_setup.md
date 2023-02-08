@@ -169,5 +169,5 @@ xxxxx@127.0.0.1's password:
 - Introduciomos el password
 
 NOTA:
-- En futuras connexiones SSH entre el anfitrión y el servidor virtual, sólo nos solicitará el password del usuario.
+- En futuras connexiones SSH, entre el anfitrión y el servidor virtual, sólo nos solicitará el password del usuario.
 ```
