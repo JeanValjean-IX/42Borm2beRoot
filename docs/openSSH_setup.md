@@ -131,6 +131,7 @@ a)	Reconfigurar virtualbox de manera que el adaptador realize un reenvio de puer
 	ip invitado      : 10.0.2.15 (corresponde a la ip address del servidor)
 	puerto invitado  : 22
 	
+	Para poder connectarnos ejecutaremos:
 	$ ssh xxxxx@127.0.0.1 -p 4242
      	
 	Las "xxxxx" se han de subtituir por un usuario del servidor
@@ -141,6 +142,7 @@ b)	Reconfigurar virtualbox de manera que el adaptador realize un adaptador puent
 	-----------------------------------------------------------------------------------
 	Selecionamos la opción "adaptador puente" en el apartado de "conectados a"
 	
+	Para poder connectarnos ejecutaremos:
 	$ ssh xxxxx@10.0.2.15 -p 4242
      	
 	Las "xxxxx" se han de subtituir por un usuario del servidor
