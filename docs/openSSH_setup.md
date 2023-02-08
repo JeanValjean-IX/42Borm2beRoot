@@ -24,21 +24,22 @@ Antes de empezar con la instalación, utilizaremos la utilidad de "Snapshot" (de
 
 Para poder realizar la instalación, utilizaremos la consola local y el usuario "root".
 
-Una vez dentro de una sesión ejecutaremos las siguientes acciones:
+Una vez dentro de la sesión, ejecutaremos las siguientes acciones:
 
-- Para verificar si el paquete "openssh-server" ya esta instalado ejecutaremos:  
+- Primero verificaremos si el paquete "openssh-server" ya esta instalado: 
 ```
 $ dpkg-query -l | grep -i openssh-server
+```
+- Si el paquete no está instalado, no visualizaremos ningun mesanje, en cambio, si el paquete está instalado, nos mostrará el siguiente mensaje:
+```
 ii  openssh-server                 1:8.4p1-5+deb11u1              amd64        secure shell (SSH) server, for secure access from remote machines
 ```
-
-
-- Actualizamod los repositorios y el software instalado
+- Actualizamos los repositorios y el software del servidor:
 ```
 $ apt update
 $ apt upgrade
 ```
-- Instalamos el software "openssh-server"
+- Si el paquete de "openssh-server" no está instalado, lo instalaremos:
 ```
 $ apt install openssh-server -y
 ```
@@ -46,7 +47,17 @@ $ apt install openssh-server -y
 ```
 $ cp /etc/ssh/sshd_config /etc/ssh/ssh_config.backup
 ```
-
+- Abrimos el fichero de configuración:
+```
+$ nano /etc/ssh/ssh_config
+```
+- Realizamos las siguientes modificaciones:
+```
+- Buscamos la linea #Port 22 y la substituimos por Port 4242
+- (Eliminamos el símbolo de comentario "#" y cambiamos el valor "22" por "4242")
+- Buscamos la linea #PermitRootLogin prohibit-password y la subtituimos por PermitRootLogin no
+- (Eliminamos el símbolo de comentario "#" y cambiamos el valor "prohibit-password" por "no")
+```
 
 
 
