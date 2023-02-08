@@ -88,6 +88,7 @@ Feb 08 19:26:40 xxxxx42 sshd[782]: Server listening on 0.0.0.0 port 4242.
 Feb 08 19:26:40 xxxxx42 sshd[782]: Server listening on :: port 4242.
 Feb 08 19:26:40 xxxxx42 systemd[1]: Started OpenBSD Secure Shell server.
 ```
+- Observamos que el servicio esta activo y esta escuchando por el puerto 4242
 - Para asegurarnos que el servicio se iniciará automáticamente al arrancar el servidor de "Debian", ejecutaremos el comando:
 ```
 $ systemctl enable ssh
@@ -108,5 +109,11 @@ $ ip a
     inet6 fe80::a00:27ff:fe9d:4151/64 scope link 
        valid_lft forever preferred_lft forever
 ```
+- Observamos que la dirección ip es: 10.0.2.15
 
+### Acceso remoto a la consola
+
+Para poder acceder remotamente a la consola del servidor mediante el protolo SSH tendremos que utilizar un cliente de SSH.
+
+Hemos de tener en cuenta que nuestro servidor está virtualizado, por lo tanto, el acceso dependerá de la configuración de red que hemos establecido para la máquina virtual.
 
