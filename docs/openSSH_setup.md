@@ -152,11 +152,11 @@ Para este proyecto la configuración del adaptador de red corresponde a la opci�
 Una vez configurado el hypervisor para que redireccione las peticiones del puerto 4242, seguiremos las siguientes indicaciones:
 
 - (En el equipo anfitrion) Editamos el fichero "knonw_hosts".
-´´´
+```
 $ nano ~/.ssh/known_hosts
 
 - Eliminamos todas las líneas en las que encontremos referencias a la dirección ip "127.0.0.1"
-´´´
+```
 
 
 Llegados a este punto, intentaremos realizar el acceso remoto SSH desde la terminal del equipo anfirión:
