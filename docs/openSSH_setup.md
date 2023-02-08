@@ -53,10 +53,11 @@ $ nano /etc/ssh/ssh_config
 ```
 - Realizamos las siguientes modificaciones:
 ```
-- Buscamos la linea #Port 22 y la substituimos por Port 4242
-- (Eliminamos el símbolo de comentario "#" y cambiamos el valor "22" por "4242")
-- Buscamos la linea #PermitRootLogin prohibit-password y la subtituimos por PermitRootLogin no
-- (Eliminamos el símbolo de comentario "#" y cambiamos el valor "prohibit-password" por "no")
+- Buscamos la linea "#Port 22" y la substituimos por "Port 4242"
+- (Eliminamos el símbolo de comentario "#" y cambiamos el valor "22" por el valor "4242")
+- Buscamos la linea "#PermitRootLogin prohibit-password" y la subtituimos por "PermitRootLogin no"
+- (Eliminamos el símbolo de comentario "#" y cambiamos el valor "prohibit-password" por el valor "no")
+- Guardamos los cambios y salidmo (ctrl+x)
 ```
 
 
