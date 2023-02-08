@@ -18,7 +18,7 @@ Al tratarse de un protocolo, como es lógico, necesitaremos un emisor (cliente d
 
 En linux, el software por excelencia utilizado para establecer comunicaciones de tipo SSH es "openSSH". 
 
-En este apartado, instalaremos y configuraremos un "Servidor de OpenSSH" en nuestro servidor.
+En este apartado, instalaremos y configuraremos un "Servidor de OpenSSH" en nuestro servidor teniendo en cuenta los requerimientos de nuestro proyecto.
 
 Antes de empezar con la instalación, utilizaremos la utilidad de "Snapshot" (de VirtualBox) para obtener una fotografia del sistema. De esta forma, en el caso que el resultados obtenidos no sean los deseados, podríamos retornar la máquina virtual al mismo punto que se encontraba antes de realizar la "Snapshot".
 
