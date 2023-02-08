@@ -132,7 +132,8 @@ a)	Reconfigurar virtualbox de manera que el adaptador realize un reenvio de puer
 	puerto invitado  : 22
 	
 	$ ssh xxxxx@127.0.0.1 -p 4242
-     	(Las "xxxxx" se han de subtituir por un usuario del servidor)
+     	
+	Las "xxxxx" se han de subtituir por un usuario del servidor
 	
 b)	Reconfigurar virtualbox de manera que el adaptador realize un adaptador puente.
 
@@ -141,6 +142,9 @@ b)	Reconfigurar virtualbox de manera que el adaptador realize un adaptador puent
 	Selecionamos la opción "adaptador puente" en el apartado de "conectados a"
 	
 	$ ssh xxxxx@10.0.2.15 -p 4242
-     	(Las "xxxxx" se han de subtituir por un usuario del servidor)
+     	
+	Las "xxxxx" se han de subtituir por un usuario del servidor
+
+Para este proyecto la configuración del adaptador de red corresponde a la opción (a), es decir, se ha configurado de forma que el equipo anfitrion redireccionará las peticiones locales del puerto 4242 a la dirección ip virtual del servidor del puerto 4242.
 
 
