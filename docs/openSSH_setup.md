@@ -22,6 +22,31 @@ En este apartado, instalaremos y configuraremos un "Servidor de OpenSSH" en nues
 
 Antes de empezar con la instalación, utilizaremos la utilidad de "Snapshot" (de VirtualBox) para obtener una fotografia del sistema. De esta forma, en el caso que el resultados obtenidos no sean los deseados, podríamos retornar la máquina virtual al mismo punto que se encontraba antes de realizar la "Snapshot".
 
+Para poder realizar la instalación, utilizaremos la consola local y el usuario "root".
+
+Una vez dentro de una sesión ejecutaremos las siguientes acciones:
+
+- Para verificar si el paquete "openssh-server" ya esta instalado ejecutaremos:  
+```
+$ dpkg-query -l | grep -i openssh-server
+ii  openssh-server                 1:8.4p1-5+deb11u1              amd64        secure shell (SSH) server, for secure access from remote machines
+```
+
+
+- Actualizamod los repositorios y el software instalado
+```
+$ apt update
+$ apt upgrade
+```
+- Instalamos el software "openssh-server"
+```
+$ apt install openssh-server -y
+```
+- Hacemos una copia de seguridad del fichero de configuración
+```
+$ cp /etc/ssh/sshd_config /etc/ssh/ssh_config.backup
+```
+
 
 
 
