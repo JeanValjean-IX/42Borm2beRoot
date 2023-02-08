@@ -113,7 +113,7 @@ $ ip a
 
 ### Acceso remoto a la consola
 
-Hemos de tener en cuenta que nuestro servidor está virtualizado, por lo tanto, el acceso dependerá de como hemos virtualizado la targeta red de nuestra máquina virtual. 
+Hemos de tener en cuenta que nuestro servidor está virtualizado, por lo tanto, el acceso por SSH dependerá de como hemos virtualizado la targeta red de nuestra máquina virtual. 
 
 A continuación se muestra dos propuestas de configuración:
 
