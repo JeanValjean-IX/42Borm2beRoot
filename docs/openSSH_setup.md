@@ -79,7 +79,18 @@ $ systemctl status ssh
         CPU: 21ms
      CGroup: /system.slice/ssh.service
              └─782 sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startups
-...
+
+Feb 08 19:26:40 xxxxx42 systemd[1]: Stopping OpenBSD Secure Shell server...
+Feb 08 19:26:40 xxxxx42 systemd[1]: ssh.service: Succeeded.
+Feb 08 19:26:40 xxxxx42 systemd[1]: Stopped OpenBSD Secure Shell server.
+Feb 08 19:26:40 xxxxx42 systemd[1]: Starting OpenBSD Secure Shell server...
+Feb 08 19:26:40 xxxxx42 sshd[782]: Server listening on 0.0.0.0 port 4242.
+Feb 08 19:26:40 xxxxx42 sshd[782]: Server listening on :: port 4242.
+Feb 08 19:26:40 xxxxx42 systemd[1]: Started OpenBSD Secure Shell server.
+```
+- Para asegurarnos que el servicio se iniciará automáticamente al arrancar el "Servidor de Debian":
+```
+$ systemctl enable ssh
 ```
 
 
