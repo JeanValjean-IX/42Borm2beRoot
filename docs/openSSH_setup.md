@@ -117,7 +117,7 @@ Para poder acceder remotamente a la consola del servidor, mediante el protolo SS
 
 Hemos de tener en cuenta que nuestro servidor está virtualizado, por lo tanto, el acceso dependerá de como hemos virtualizado la targeta red de nuestra máquina virtual. 
 
-A continuación se muestra como :
+A continuación se muestra dos propuestas de configuración:
 
 a)	Reconfigurar virtualbox de manera que el adaptador realize un reenvio de puertos.
 	
@@ -132,7 +132,7 @@ a)	Reconfigurar virtualbox de manera que el adaptador realize un reenvio de puer
 	puerto invitado  : 22
 	```
 	$ ssh xxxxx@127.0.0.1 -p 4242
-     ```
+     	```
 b)	Reconfigurar virtualbox de manera que el adaptador realize un adaptador puente.
 
 	Preferencias de red - Conectado a: Adaptador puente
@@ -140,6 +140,6 @@ b)	Reconfigurar virtualbox de manera que el adaptador realize un adaptador puent
 	Selecionamos la opción "adaptador puente" en el apartado de "conectados a"
 	```
 	$ ssh xxxxx@10.0.2.15 -p 4242
-     ```
+     	```
 
 
