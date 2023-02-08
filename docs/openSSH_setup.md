@@ -113,7 +113,7 @@ $ ip a
 
 ### Acceso remoto a la consola
 
-Para poder acceder remotamente a la consola del servidor mediante el protolo SSH tendremos que utilizar un cliente de SSH.
+Para poder acceder remotamente a la consola del servidor, mediante el protolo SSH, tendremos que utilizar un cliente de SSH.
 
 Hemos de tener en cuenta que nuestro servidor está virtualizado, por lo tanto, el acceso dependerá de la configuración de red que hemos establecido para la máquina virtual.
 
