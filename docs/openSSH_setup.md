@@ -182,6 +182,6 @@ $ ssh root@127.0.0.1 -p 4242
 ```
 $ ssh xxxxx@127.0.0.1 -p 4242
 ```
-4) Verificar que no se ha podido acceder con el usuario "xxxxx"
+4) Verificar que se ha podido acceder con el usuario "xxxxx"
 
 Si el resultado de las verificaciones es el esperado, entonces eliminaremos el "Snapshot", en caso contrario, restauraremos el "Snapshot".
