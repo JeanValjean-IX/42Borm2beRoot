@@ -171,3 +171,17 @@ xxxxx@127.0.0.1's password:
 NOTA:
 - En futuras connexiones SSH, entre el anfitrión y el servidor virtual, sólo nos solicitará el password del usuario.
 ```
+### Verificaciones
+
+1) Ejecutamos el cliente de SSH utilizando el usuario "root" para acceder al servidor:
+```
+$ ssh root@127.0.0.1 -p 4242
+```
+2) Verificar que no se ha podido acceder con el usuario "root"
+3) Ejecutamos el cliente de SSH utilizando el usuario "xxxxx" para acceder al servidor:
+```
+$ ssh xxxxx@127.0.0.1 -p 4242
+```
+4) Verificar que no se ha podido acceder con el usuario "xxxxx"
+
+Si el resultado de las verificaciones es el esperado, entonces eliminaremos el "Snapshot", en caso contrario, restauraremos el "Snapshot".
