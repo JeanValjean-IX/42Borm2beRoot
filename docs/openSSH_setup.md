@@ -113,8 +113,6 @@ $ ip a
 
 ### Acceso remoto a la consola
 
-Para poder acceder remotamente a la consola del servidor, mediante el protolo SSH, tendremos que utilizar un cliente de SSH.
-
 Hemos de tener en cuenta que nuestro servidor está virtualizado, por lo tanto, el acceso dependerá de como hemos virtualizado la targeta red de nuestra máquina virtual. 
 
 A continuación se muestra dos propuestas de configuración:
@@ -147,9 +145,9 @@ b)	Reconfigurar virtualbox de manera que el adaptador realize un adaptador puent
      	
 	Las "xxxxx" se han de subtituir por un usuario del servidor
 
-Para este proyecto la configuración del adaptador de red corresponde a la opción (a), es decir, se ha configurado de forma que el equipo anfitrion redireccionará las peticiones locales del puerto 4242 a la dirección ip virtual del servidor del puerto 4242.
+En este proyecto, la configuración del adaptador de red corresponde a la opción (a). Es decir, se ha configurado de forma que el equipo anfitrion redireccionará las peticiones locales del puerto 4242 a la dirección ip virtual del servidor del puerto 4242.
 
-Una vez configurado el hypervisor para que redireccione las peticiones del puerto 4242, seguiremos las siguientes indicaciones:
+Para poder connectarnos por SSH seguiremos las siguientes indicaciones:
 
 - (En el equipo anfitrion) Editamos el fichero "knonw_hosts".
 ```
@@ -157,15 +155,16 @@ $ nano ~/.ssh/known_hosts
 
 - Eliminamos todas las líneas en las que encontremos referencias a la dirección ip "127.0.0.1"
 ```
+- Ejecutaremos el cliente de SSH:
+```
+$ ssh xxxxx@127.0.0.1 -p 4242
+The authenticity of host '	[127.0.0.1]:4242 ([127.0.0.1]:4242)' can't be established.
+ECDSA key fingerprint is SHA256:oRyXyypvF2zq7eURTnfseKWu8SA3L9ZfD0Z2wXpztMg.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added '[127.0.0.1]:4242' (ECDSA) to the list of known hosts.
+xxxxx@127.0.0.1's password:
 
-
-Llegados a este punto, intentaremos realizar el acceso remoto SSH desde la terminal del equipo anfirión:
-
-	$  ssh blopez-f@127.0.0.1 -p 4242
-	xxxxxxx@xxxxx ~ % ssh username42@127.0.0.1 -p 4242The authenticity of host '	[127.0.0.1]:4242 ([127.0.0.1]:4242)' can't be established.
-	ECDSA key fingerprint is SHA256:oRyXyypvF2zq7eURTnfseKWu8SA3L9ZfD0Z2wXpztMg.
-	Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
-	Warning: Permanently added '[127.0.0.1]:4242' (ECDSA) to the list of known hosts.
-	blopez-f@127.0.0.1's password: 	
-
-Puesto que será la primera vez que nos connectamos desde la terminal que utilizamos, nos aparecerá un mensaje donde nos indica si aceptamos la huella. Diremos que "yes" y después introduciemos el password. Para futuras conexiones sólo nos solicitará la contraseña.
+- Las "xxxxx" se han de subtituir por un usuario del servidor.
+- Decimos "yes"
+- Introduciomos el password
+```
