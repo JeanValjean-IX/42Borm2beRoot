@@ -57,7 +57,29 @@ $ nano /etc/ssh/ssh_config
 - (Eliminamos el símbolo de comentario "#" y cambiamos el valor "22" por el valor "4242")
 - Buscamos la linea "#PermitRootLogin prohibit-password" y la subtituimos por "PermitRootLogin no"
 - (Eliminamos el símbolo de comentario "#" y cambiamos el valor "prohibit-password" por el valor "no")
-- Guardamos los cambios y salidmo (ctrl+x)
+- Guardamos los cambios y salimos (ctrl+x)
+```
+- Reiniciamos los servicio:
+```
+$ systemctl restart ssh
+```
+- Verificamos el estado del servicio:
+```
+$ systemctl status ssh
+
+● ssh.service - OpenBSD Secure Shell server
+     Loaded: loaded (/lib/systemd/system/ssh.service; enabled; vendor preset: enabled)
+     Active: active (running) since Wed 2023-02-08 19:26:40 GMT; 58s ago
+       Docs: man:sshd(8)
+             man:sshd_config(5)
+    Process: 781 ExecStartPre=/usr/sbin/sshd -t (code=exited, status=0/SUCCESS)
+   Main PID: 782 (sshd)
+      Tasks: 1 (limit: 4671)
+     Memory: 1.1M
+        CPU: 21ms
+     CGroup: /system.slice/ssh.service
+             └─782 sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startups
+...
 ```
 
 
