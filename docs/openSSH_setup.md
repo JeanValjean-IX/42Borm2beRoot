@@ -115,5 +115,31 @@ $ ip a
 
 Para poder acceder remotamente a la consola del servidor, mediante el protolo SSH, tendremos que utilizar un cliente de SSH.
 
-Hemos de tener en cuenta que nuestro servidor está virtualizado, por lo tanto, el acceso dependerá de la configuración de red que hemos establecido para la máquina virtual.
+Hemos de tener en cuenta que nuestro servidor está virtualizado, por lo tanto, el acceso dependerá de como hemos virtualizado la targeta red de nuestra máquina virtual. 
+
+A continuación se muestra como :
+
+a)	Reconfigurar virtualbox de manera que el adaptador realize un reenvio de puertos.
+	
+	Preferencias de red - Conectado a: NAT
+	-----------------------------------------------------------------------------------
+	Selecionamos "opciones avanzadas" y "reenvio de puertos" y añadimos la regla:	
+
+	nombre           : ssh
+	ip anfitrión     : 127.0.0.1
+	puerto anfitrión : 4242
+	ip invitado      : 10.0.2.15 (corresponde a la ip address del servidor)
+	puerto invitado  : 22
+	```
+	$ ssh xxxxx@127.0.0.1 -p 4242
+     ```
+b)	Reconfigurar virtualbox de manera que el adaptador realize un adaptador puente.
+
+	Preferencias de red - Conectado a: Adaptador puente
+	-----------------------------------------------------------------------------------
+	Selecionamos la opción "adaptador puente" en el apartado de "conectados a"
+	```
+	$ ssh xxxxx@10.0.2.15 -p 4242
+     ```
+
 
