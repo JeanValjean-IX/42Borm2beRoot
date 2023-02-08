@@ -147,7 +147,7 @@ b)	Reconfigurar virtualbox de manera que el adaptador realize un adaptador puent
 
 En este proyecto, la configuración del adaptador de red corresponde a la opción (a). Es decir, se ha configurado de forma que el equipo anfitrion redireccionará las peticiones locales del puerto 4242 a la dirección ip virtual del servidor del puerto 4242.
 
-Para poder connectarnos por SSH seguiremos las siguientes indicaciones:
+Una vez terminemos de configurar el adaptador virtual de red, para poder connectarnos por SSH seguiremos las siguientes indicaciones:
 
 - (En el equipo anfitrion) Editamos el fichero "knonw_hosts".
 ```
@@ -155,7 +155,7 @@ $ nano ~/.ssh/known_hosts
 
 - Eliminamos todas las líneas en las que encontremos referencias a la dirección ip "127.0.0.1"
 ```
-- Ejecutaremos el cliente de SSH:
+- (En el equipo anfitrion) Ejecutaremos el "cliente SSH":
 ```
 $ ssh xxxxx@127.0.0.1 -p 4242
 The authenticity of host '	[127.0.0.1]:4242 ([127.0.0.1]:4242)' can't be established.
@@ -167,4 +167,7 @@ xxxxx@127.0.0.1's password:
 - Las "xxxxx" se han de subtituir por un usuario del servidor.
 - Decimos "yes"
 - Introduciomos el password
+
+NOTA:
+- En futuras connexiones SSH entre el anfitrión y el servidor virtual, sólo nos solicitará el password del usuario.
 ```
