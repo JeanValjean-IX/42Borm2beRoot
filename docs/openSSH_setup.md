@@ -173,12 +173,12 @@ NOTA:
 ```
 ### Verificaciones
 
-1) Ejecutamos el cliente de SSH utilizando el usuario "root" para acceder al servidor:
+1) Ejecutamos, desde el anfitrión, el cliente de SSH utilizando el usuario "root" para acceder al servidor:
 ```
 $ ssh root@127.0.0.1 -p 4242
 ```
 2) Verificar que no se ha podido acceder con el usuario "root"
-3) Ejecutamos el cliente de SSH utilizando el usuario "xxxxx" para acceder al servidor:
+3) Ejecutamos, desde el anfitrión, el cliente de SSH utilizando el usuario "xxxxx" para acceder al servidor:
 ```
 $ ssh xxxxx@127.0.0.1 -p 4242
 ```
