@@ -66,7 +66,7 @@ Antes de continuar, hemos de tener en cuenta que todo proceso de instalación y 
 
 - [Instalación de la utilidad "super user do" (utilidad: sudo)](/docs/sudo_setup.md)
 - [Instalación de un servicio de acceso remoto por SSH (Servidor de openSSH)](/docs/openSSH_setup.md)
-- Instalación de la utilidad "Uncomplicated Firewall" (utilidad: ufw)
+- [Instalación de la utilidad "Uncomplicated Firewall" (utilidad: ufw)](/docs/ufw_setup.md)
 - Implementación de una política estricta de passwords (módulos: libpam-pwquality / libpam-cracklib)
 - Desarrollo e implementación de un "script" de monitorización del servidor.
 
