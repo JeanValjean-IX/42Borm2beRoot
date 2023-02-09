@@ -39,7 +39,7 @@ $ sudo apt upgrade
 ```
 $ sudo apt install ufw -y
 ```
-- Para evitar problemas, lo primero que haremos es visualizar el estado y las reglas definidas:
+- Para evitar problemas, lo primero que haremos será visualizar el estado y las reglas definidas:
 ```
 $ sudo systemctl status ufw
 ● ufw.service - Uncomplicated firewall
