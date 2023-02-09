@@ -32,18 +32,51 @@ Si el paquete no está instalado, no visualizaremos ningun mesanje, en cambio, s
 ```
 ii  libpam-pwquality:amd64         1.4.4-1                        amd64        PAM module to check password strength
 ```
+- Actualizamos los repositorios y el software del servidor:
+```
+$ sudo apt update
+$ sudo apt upgrade
+```
+- Si el paquete de "ufw" no está instalado, lo instalaremos:
+```
+$ sudo apt install libpam-pwquality -y
+```
+- Hacemos una copia de seguridad del fichero de configuración "common-password":
+```
+$ sudo cp /etc/pam.d/common-password /etc/pam.d/common-password.backup
+```
+- Editamos el fichero de configuración y realizamos las siguientes modificaciones:
+```
+$ sudo nano /etc/pam.d/common-password
 
+- Buscamos la linea que contiene:
+password        requisite       pam_pwquality.so retry=3
+- La subtituimos por la siguiente línea:
+password        requisite       pam_pwquality.so minlen=10 lcredit=-1 ucredit=-1 dcredit=-1 maxrepeat=3 reject_username difok=7 enforce_for_root
+- Guardamos los cambios y salimos (ctrl+x)
+```
+- Hacemos una copia de seguridad del fichero de configuración "login.defs":
+```
+$ sudo cp /etc/login.defs /etc/login.defs.backup
+```
+- Editamos el fichero de configuración y realizamos las siguientes modificaciones:
+```
+$ sudo nano /etc/login.defs
 
+- Buscamos las líneas:
+PASS_MAX_DAYS   ..... 
+PASS_MIN_DAYS   .....
+PASS_WARN_AGE   .....
 
+- Las modificamos con los siguientes valores:
+PASS_MAX_DAYS   30
+PASS_MIN_DAYS   2
+PASS_WARN_AGE   7
+```
+- Cambiamos las contraseñas del usuario "root" y el usuario que hemos utilizado para la instalació:
+```
+$ sudo passwd root
+$ sudo passwd xxxxxx
 
-
-Esta política tendrá que cumplir las siguientes reglas:
-
-- Caducidad del password se fija en 30 dias.
-- El mínimo de dias para volver a cambiar el password una vez cambiado es de 2 días.
-- El número de dias para empezar a avisar que el password va a acaducar es de 7 días.
-- La nueva contraseña ha de tener una longitud de 10 carácteres como mínimo.
-- La nueva contraseña de de tener como mínimo: una letra en minúscula, otra letra en mayúscula y un número.
-- La nueva contraseña no puede tener 3 caracteres iguales consecutivos.
-- La nueva contraseña no puede incluir el nombre del usuario.
-- 
+(las "xxxxx" se han de subtituir por el username del usuario que hemos utuilizado")
+```
