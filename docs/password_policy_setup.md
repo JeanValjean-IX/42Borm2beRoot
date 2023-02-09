@@ -73,6 +73,10 @@ PASS_MAX_DAYS   30
 PASS_MIN_DAYS   2
 PASS_WARN_AGE   7
 ```
+- Hemos de tener en cuenta, que la modificación que hemos realizado del fichero de configuración sólo será efectiva para los usuarios nuevos. Para los usuarios, anteriores a la modificación, tendremos que utilizar el comando "chage", por ejemplo:
+```
+$ sudo chage root -m 2 -M 30 -W 7
+```
 - Cambiamos las contraseñas del usuario "root" y el usuario que hemos utilizado para la instalació:
 ```
 $ sudo passwd root
