@@ -24,9 +24,14 @@ Para poder realizar la instalación, utilizaremos la consola remota con el usuar
 
 Una vez dentro de la sesión, ejecutaremos las siguientes acciones:
 
-
-
-
+- Primero verificaremos si el paquete "libpam-pwquality" ya esta instalado:
+```
+$ dpkg-query -l | grep -i libpam-pwquality
+```
+Si el paquete no está instalado, no visualizaremos ningun mesanje, en cambio, si el paquete está instalado, nos mostrará el siguiente mensaje:
+```
+ii  libpam-pwquality:amd64         1.4.4-1                        amd64        PAM module to check password strength
+```
 
 
 
