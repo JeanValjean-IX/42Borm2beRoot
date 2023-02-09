@@ -57,7 +57,9 @@ $ sudo ufw enable
 Command may disrupt existing ssh connections. Proceed with operation (y|n)? 
 Firewall is active and enabled on system startup
 ```
-- Verificamos el estado y las reglas que hemos creado:
+### Verificaciones
+
+1) Verificamos si está activo y además está creada la del puerto 4242 para TCPv4 i TCPv6:
 ```
 $ sudo ufw status
 Status: active
@@ -67,3 +69,4 @@ To                         Action      From
 4242                       ALLOW       Anywhere                  
 4242 (v6)                  ALLOW       Anywhere (v6)       
 ```
+Si el resultado de las verificaciones es el esperado, entonces eliminaremos el "Snapshot", en caso contrario, restauraremos el "Snapshot".
