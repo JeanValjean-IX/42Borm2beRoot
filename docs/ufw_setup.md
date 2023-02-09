@@ -16,9 +16,7 @@ Esta herramienta no se instala por defecto, por lo tanto, tendremos que instalar
 
 Antes de empezar con la instalación, utilizaremos la utilidad de "Snapshot" (de VirtualBox) para obtener una fotografia del sistema. De esta forma, en el caso que el resultados obtenidos no sean los deseados, podríamos retornar la máquina virtual al mismo punto que se encontraba antes de realizar la "Snapshot".
 
-Para poder realizar la instalación, utilizaremos la consola local y el usuario "root", alternativamente y puesto que ya hemos instalado el servicio de SSH, tambien podemos iniciar una sesión remota con un usuario con roles de administración.
-
-Si utilizamos un usuario diferente al usuario "root", tendremos que utilizar la utilidad "sudo". Para este apartado, se ha utilizado el usuario que creamos en el proceso de instalación mediante una consola remota utilizando el protocolo SSH.
+Para poder realizar la instalación, utilizaremos la consola remota por SSH con el usuario que hemos creado en la instalación del servidor. Al utilizar un usuario diferente al "root", tendremos que hacer uso de la utilidad "sudo" 
 
 Una vez dentro de la sesión, ejecutaremos las siguientes acciones:
 
