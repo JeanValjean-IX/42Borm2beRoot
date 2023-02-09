@@ -20,7 +20,7 @@ Para poder realizar la instalación, utilizaremos la consola remota con el usuar
 
 Una vez dentro de la sesión, ejecutaremos las siguientes acciones:
 
-- Primero verificaremos si el paquete "openssh-server" ya esta instalado: 
+- Primero verificaremos si el paquete "ufw" ya esta instalado: 
 ```
 $ sudo dpkg-query -l | grep -i ufw
 ```
