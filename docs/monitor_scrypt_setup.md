@@ -28,13 +28,17 @@ $ echo "Virtual processors: $(grep processor /proc/cpuinfo | wc -l)"
 ```
 - The current available RAM on your server and its utilization rate as a percentage:
 ```
-$ echo " RAM : $(free --mega | awk '$1 == "Mem:" {printf("%i MB (%.2f%%)\n", $2,$3/$2*100)}')"
+$ echo "       RAM : $(free --mega | awk '$1 == "Mem:" {printf("%i MB (%.2f%%)\n", $2,$3/$2*100)}')"
 ```
 - The current available memory on your server and its utilization rate as a percentage:
 ```
-$ echo "DISK : $(df -m | grep "/dev/" | grep -v "/boot" | awk '{memory_total += $2; memory_use += $3} END {printf ("%i MB (%.2f%%)\n", memory_total,(memory_use*100)/memory_total)}')"
+$ echo "      DISK : $(df -m | grep "/dev/" | grep -v "/boot" | awk '{memory_total += $2; memory_use += $3} END {printf ("%i MB (%.2f%%)\n", memory_total,(memory_use*100)/memory_total)}')"
 ```
 - The current utilization rate of your processors as a percentage.
 ```
-$ echo " CPU : $(vmstat 1 4 | tail -1 | awk '{printf("%i", $13)}')%"
+$ echo "       CPU : $(vmstat 1 4 | tail -1 | awk '{printf("%i", $13)}')%"
+```
+- The date and time of the last reboot.
+```
+$ echo " Last boot : $(who -b | awk '$1 == "system" {print $3 " " $4}')"
 ```
