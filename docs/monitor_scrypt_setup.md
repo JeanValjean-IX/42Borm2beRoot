@@ -28,10 +28,13 @@ $ echo "Virtual processors: $(grep processor /proc/cpuinfo | wc -l)"
 ```
 - The current available RAM on your server and its utilization rate as a percentage:
 ```
-$ echo "RAM memory (size)   : $(free --mega | awk '$1 == "Mem:" {print $2}')"
-$ echo "RAM memory (in use) : $(free --mega | awk '$1 == "Mem:" {printf("(%.2f%%)\n", $3/$2*100)}')"
+$ echo " RAM : $(free --mega | awk '$1 == "Mem:" {printf("%i MB (%.2f%%)\n", $2,$3/$2*100)}')"
 ```
 - The current available memory on your server and its utilization rate as a percentage:
 ```
-$ echo "Disk : $(df -BG | grep "/dev/" | awk '{memory_use += $3;memory_total += $2} END {printf("%i GB (%.2f%%)\n",memory_total,(memory_use*100/memory_total))}')"
+$ echo "DISK : $(df -m | grep "/dev/" | grep -v "/boot" | awk '{memory_total += $2; memory_use += $3} END {printf ("%i MB (%.2f%%)\n", memory_total,(memory_use*100)/memory_total)}')"
+```
+- The current utilization rate of your processors as a percentage.
+```
+
 ```
