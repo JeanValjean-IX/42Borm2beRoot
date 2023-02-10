@@ -36,5 +36,5 @@ $ echo "DISK : $(df -m | grep "/dev/" | grep -v "/boot" | awk '{memory_total += 
 ```
 - The current utilization rate of your processors as a percentage.
 ```
-
+$ echo " CPU : $(vmstat 1 4 | tail -1 | awk '{printf("%i", $13)}')%"
 ```
