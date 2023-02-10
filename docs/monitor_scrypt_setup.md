@@ -108,6 +108,6 @@ $ sudo crontab -u root -e
 ```
 - Introducimos las líneas:
 ```
-*/10 * * * * sh ~/monitor.sh
+*/10 * * * * sh ~/monitoring.sh
 ```
 - Guardamos y salimos (ctrl+x)
