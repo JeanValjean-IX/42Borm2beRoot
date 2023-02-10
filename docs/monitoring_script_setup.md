@@ -8,7 +8,7 @@ Antes de continuar, hemos de tener en cuenta que todo proceso de instalación y 
 - Antes de instalar una utilidad o libreria o servicio, deberíamos actualizar tanto los repositorios como el software del sistema operativo.
 - Antes de manipular o alterar un fichero de configuración, deberíamos hacer una copia.
 
-### Desarrollo e implementación de un "script" de monitorización del servidor.
+### Desarrollo e implementación de un "script" para la monitorización del servidor.
 
 En este apartado no vamos a realizar acciones instrusivas o que puedan suponer un riesgo en el servidor, por lo tanto, no será necesario realizar snapshots de nuestra máquina virtual.
 
