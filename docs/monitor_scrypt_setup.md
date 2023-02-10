@@ -33,7 +33,5 @@ $ echo "RAM memory (in use) : $(free --mega | awk '$1 == "Mem:" {printf("(%.2f%%
 ```
 - The current available memory on your server and its utilization rate as a percentage:
 ```
-(Según el ejemplo, parace referirse al disco)
-$ echo "Disk memory (size)   : $(df -BG | grep "/dev/" | awk '{memory_total += $2} END {print (memory_total)}')"
-$ echo "Disk memory (in use) : $(df -BG | grep "/dev/" | awk '{memory_use += $3;memory_total += $2} END {printf("(%.2f%%)\n",(memory_use*100/memory_total))}')"
+$ echo "Disk : $(df -BG | grep "/dev/" | awk '{memory_use += $3;memory_total += $2} END {printf("%i GB (%.2f%%)\n",memory_total,(memory_use*100/memory_total))}')"
 ```
