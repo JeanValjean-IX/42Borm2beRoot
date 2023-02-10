@@ -33,7 +33,7 @@ $ echo "RAM memory (free) : $(free --mega | awk '$1 == "Mem:" {printf("(%.2f%%)\
 ```
 - The current available memory on your server and its utilization rate as a percentage:
 ```
-(Supongo que se refiere al disco)
-$ echo "Disc memory (size) : $()"
+(Según el ejemplo, parace referirse al disco)
+$ echo "Disk memory (size) : $()"
 $ echo "Disk memory () : $()"
 ```
