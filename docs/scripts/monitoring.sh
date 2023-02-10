@@ -12,7 +12,7 @@ activeConnections=$(ss -ta | grep ESTAB | wc -l)
 totalUsers=$(users | wc -w)
 ipAddress=$(ip addr show |grep -w inet |grep -v 127.0.0.1|awk '{ print $2}'| cut -d "/" -f 1)
 macAddress=$(ip a |awk '/ether/ {print $2}')
-sudoExecuted=journalctl _COMM=sudo | grep COMMAND | wc -l
+sudoExecuted=$(journalctl _COMM=sudo | grep COMMAND | wc -l)
 
 wall " 
           Type : $typeLinux
